@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="file_style">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>50</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>csv文件</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>xlsx文件</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>txt文件</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>json文件</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>391</width>
+     <height>361</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>250</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>人员信息显示</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输入文件类型</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>60</y>
+     <width>81</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>起始位置</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="start_number">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>60</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>120</y>
+     <width>81</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>步长</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="step_number">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>110</y>
+     <width>113</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_josephus">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>220</y>
+     <width>181</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>约瑟夫环开始</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>390</y>
+     <width>81</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>结果显示</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="select_file">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择文件</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>101</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>文件路径：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="file_name">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="show_result">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>380</y>
+     <width>311</width>
+     <height>107</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>230</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

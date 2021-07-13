@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "D:\\Python\\set-anaconda\\python.exe",
+    "python.autoComplete.extraPaths": [
+    
+    ],
+    "python.analysis.extraPaths": [],
+    "[python]": {
+
+        "editor.wordBasedSuggestions": false
+    },
+    
+}
