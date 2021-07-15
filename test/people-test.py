@@ -1,18 +1,12 @@
 import sys
-sys.path.append('E:\\LSS\\LSS\\Josephus problem')
+sys.path.append("../Josephusproblem")
 import unittest
-from People.people import People
+from People.people import Person
 
 class PeopleTest(unittest.TestCase):
-    def test_judge_age(self):
-        people_sample = People('lisa','女',-1)
-        sample = people_sample.judge_age()
-        self.assertEqual('年龄错误',sample)
+    def test_gen_one_person(self):
+        peoson = Person("闪闪",'女',3)
+        self.assertEqual("姓名：闪闪，性别：女，年龄：3",peoson.__str__())
     
-    def test_judge_gender(self):
-        people_sample = People('lisa','女',-1)
-        sample = people_sample.judge_gender()
-        self.assertEqual('性别错误',sample)
-
 if __name__ == '__main__':
     unittest.main()

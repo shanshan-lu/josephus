@@ -5,7 +5,7 @@ from achieve.achieve import Achieve
 
 if __name__ == '__main__':
     obj = Achieve()
-    file_name = '../Josephusproblem/data/zip.zip'
+    file_name = '../Josephusproblem/data/txt.txt'
     obj.select_reader(file_name)
     obj.create_people()
     obj.set_start(2)
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     result = obj.set_josephus_sample()
     
     for out_person in result:
-        print(out_person.__str__())
+        print(out_person)
         
           
 
