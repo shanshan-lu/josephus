@@ -8,7 +8,7 @@ from Create.reader import CsvReader, XlsxReader, ZipReader, TxtReader, JsonReade
 from People.people import Person
 
 
-class Achieve():
+class Achieve:
     def __init__(self):
         self._reader = None
         self._start = 0
@@ -26,7 +26,8 @@ class Achieve():
             self._reader = XlsxReader(file_name)
 
         if file_extension == ".zip":
-            self._reader = ZipReader(file_name)
+            inter_file = input("please input which file you want to open: ")
+            self._reader = ZipReader(file_name, inter_file)
 
         if file_extension == ".txt":
             self._reader = TxtReader(file_name)
@@ -36,9 +37,7 @@ class Achieve():
         else:
             ValueError
 
-        file = self._reader.read_file()
-
-        return self._reader.save_to_list(file)
+        return self._reader.read_file()
 
     def create_people(self):  # 创建人员列表
         for i in range(len(self._reader.content)):
@@ -65,5 +64,3 @@ class Achieve():
     def set_josephus_sample(self):  # 创建约瑟夫环
         self.josephus = Josephus(self._people, self._start, self._step)
         return self.josephus
-
-    
