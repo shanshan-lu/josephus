@@ -26,5 +26,3 @@ class Josephus:
             return self.out_person
         else:
             raise StopIteration
-
-        
