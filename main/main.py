@@ -1,17 +1,23 @@
 import sys
-sys.path.append('../Josephus Problem')
+sys.path.append('../JosephusProblem')
 from achieve.achieve import Achieve
-from src.conf import Flag
+
 
 if __name__ == '__main__':
-    sample = Achieve()
-    file_name = '../Josephus problem/data/zip.zip'
-    sample.select_reader(file_name)
-    sample.create_people()
-    sample.set_start(2)
-    sample.set_step(1)
-    sample.set_josephus_sample()
-    sample.output()
-    sample.display(flag=Flag.LAST)
+    obj = Achieve()
+    file_name = '../Josephusproblem/data/zip.zip'
+    obj.select_reader(file_name)
+    obj.create_people()
+    obj.set_start(2)
+    obj.set_step(1)
+    result = obj.set_josephus_sample()
+    
+    for out_person in result:
+        print(out_person.__str__())
+        
+          
+
+    
+    
 
 
